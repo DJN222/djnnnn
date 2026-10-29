@@ -1,0 +1,92 @@
+{
+  "train_years": [
+    2022,
+    2023
+  ],
+  "validation_year": 2023,
+  "validation_training_year": 2022,
+  "test_year": 2024,
+  "group_capacity_kw": {
+    "G1": 20465.655,
+    "G2": 22189.715
+  },
+  "minimum_capacity_kw": 20000,
+  "validation": [
+    {
+      "params": {
+        "num_leaves": 31,
+        "learning_rate": 0.05
+      },
+      "penalty_krw_observed": 81375048.45514496,
+      "site_mae_kwh": 3.994842580831045,
+      "group_mae_kwh_observed": 126.69207131087065,
+      "observed_site_hours": 974158,
+      "group_hours": 17520,
+      "complete_group_hours": 0,
+      "complete_group_penalty_krw": null,
+      "min_sites_per_group_hour": 6
+    },
+    {
+      "params": {
+        "num_leaves": 63,
+        "learning_rate": 0.03
+      },
+      "penalty_krw_observed": 80856252.56914026,
+      "site_mae_kwh": 3.976595996838393,
+      "group_mae_kwh_observed": 125.83529397199987,
+      "observed_site_hours": 974158,
+      "group_hours": 17520,
+      "complete_group_hours": 0,
+      "complete_group_penalty_krw": null,
+      "min_sites_per_group_hour": 6
+    },
+    {
+      "params": {
+        "num_leaves": 127,
+        "learning_rate": 0.03
+      },
+      "penalty_krw_observed": 80426133.91891855,
+      "site_mae_kwh": 3.9644880003004728,
+      "group_mae_kwh_observed": 125.05501236515688,
+      "observed_site_hours": 974158,
+      "group_hours": 17520,
+      "complete_group_hours": 0,
+      "complete_group_penalty_krw": null,
+      "min_sites_per_group_hour": 6
+    }
+  ],
+  "chosen_configuration": 2,
+  "early_stopping_iterations": {
+    "10_0": 193,
+    "10_1": 303,
+    "10_2": 263,
+    "17_0": 239,
+    "17_1": 309,
+    "17_2": 264
+  },
+  "results": {
+    "baseline": {
+      "penalty_krw_observed": 210482777.98017555,
+      "site_mae_kwh": 6.278053212909934,
+      "group_mae_kwh_observed": 392.0986208587559,
+      "observed_site_hours": 1884185,
+      "group_hours": 17568,
+      "complete_group_hours": 4344,
+      "complete_group_penalty_krw": 52693873.63236366,
+      "min_sites_per_group_hour": 22
+    },
+    "improved": {
+      "penalty_krw_observed": 198802108.19933647,
+      "site_mae_kwh": 6.156584594493999,
+      "group_mae_kwh_observed": 369.90125458359194,
+      "observed_site_hours": 1884185,
+      "group_hours": 17568,
+      "complete_group_hours": 4344,
+      "complete_group_penalty_krw": 50788933.647264235,
+      "min_sites_per_group_hour": 22
+    }
+  },
+  "penalty_reduction_krw": 11680669.780839086,
+  "penalty_reduction_percent": 5.5494658009213635,
+  "caveat": "Observed site-hours only. Missing generation is excluded, never imputed as zero. This is not the full-fleet official contest score. Groups fixed to baseline. 2024 never used for tuning. Seed fixed to 42 for both models. Early stopping uses MAE; candidates selected using group monetary penalty."
+}
