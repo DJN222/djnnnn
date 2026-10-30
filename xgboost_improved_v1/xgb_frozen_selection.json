@@ -1,0 +1,73 @@
+{
+  "best": 1,
+  "validation": [
+    {
+      "params": {
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "min_child_weight": 20,
+        "reg_lambda": 10
+      },
+      "penalty_krw_observed": 80921887.99163279,
+      "site_rmse_kwh": 13.47351341689726,
+      "group_rmse_kwh_observed": 344.0049320922823,
+      "site_mae_kwh": 4.029883253079213,
+      "group_mae_kwh_observed": 126.59368380875604,
+      "observed_site_hours": 974158,
+      "group_hours": 17520,
+      "complete_group_hours": 0,
+      "complete_group_penalty_krw": null,
+      "min_sites_per_group_hour": 6
+    },
+    {
+      "params": {
+        "max_depth": 6,
+        "learning_rate": 0.03,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "min_child_weight": 50,
+        "reg_lambda": 10
+      },
+      "penalty_krw_observed": 79894381.3937414,
+      "site_rmse_kwh": 13.29172450581169,
+      "group_rmse_kwh_observed": 341.3342510867935,
+      "site_mae_kwh": 3.969148455300068,
+      "group_mae_kwh_observed": 124.35388404838791,
+      "observed_site_hours": 974158,
+      "group_hours": 17520,
+      "complete_group_hours": 0,
+      "complete_group_penalty_krw": null,
+      "min_sites_per_group_hour": 6
+    },
+    {
+      "params": {
+        "max_depth": 8,
+        "learning_rate": 0.03,
+        "subsample": 0.7,
+        "colsample_bytree": 0.9,
+        "min_child_weight": 100,
+        "reg_lambda": 20
+      },
+      "penalty_krw_observed": 80046111.61749622,
+      "site_rmse_kwh": 13.33740417577541,
+      "group_rmse_kwh_observed": 342.52997465817697,
+      "site_mae_kwh": 3.958734087276464,
+      "group_mae_kwh_observed": 124.1791407678066,
+      "observed_site_hours": 974158,
+      "group_hours": 17520,
+      "complete_group_hours": 0,
+      "complete_group_penalty_krw": null,
+      "min_sites_per_group_hour": 6
+    }
+  ],
+  "iterations": {
+    "10_0": 335,
+    "10_1": 307,
+    "10_2": 287,
+    "17_0": 401,
+    "17_1": 302,
+    "17_2": 316
+  }
+}
